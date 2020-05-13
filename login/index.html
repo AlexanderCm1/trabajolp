@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styless.css">
+    <script src="js/login.js"></script>
+</head>
+<body>
+
+    <section id="caja">
+    <div id="login">
+        <h1>Registrate</h1>
+        <form action="#" onsubmit="enviar()">
+
+            <label for="name">Usuario</label> <br>
+            <input type="text" name="name" id="user" required><br>
+           
+            <label for="password">contraseña</label> <br>
+            <input type="password" name="password" id="pass" required> <br>
+            <br>
+
+            <input type="submit" value="registrar">
+
+        </form>
+
+    </div>
+    <h1 id="c"></h1>
+    <div id="comprovar">
+        <h1>Ya tienes cuenta?</h1>
+        <form  action="#" onsubmit="confirmar(); return false">
+
+            <label for="name">Usuario</label> <br>
+            <input type="text" name="name" id="user_conf" required><br>
+           
+            <label for="password">contraseña</label> <br>
+            <input type="password" name="password" id="pass_conf" required> <br>
+            <br>
+            <input type="submit" value="entrar">
+
+        </form>
+        <br>
+        <hr>
+        <br>
+    <button onclick="cerrar()">cerrar sesion</button>
+
+    </div>
+</section>
+    
+</body>
+</html>
